@@ -9,7 +9,7 @@ const Details = ({handleDelete}) => {
   const [error, setError] = useState();
   
   useEffect(() => {
-    axios(`http://localhost:3003/dogs/${id}`)
+    axios(`dogs/${id}`)
       .then(({ data }) => {
         setDog(data);
       })

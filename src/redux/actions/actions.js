@@ -10,12 +10,11 @@ import { ADD_DOG,
 
 import axios from "axios";
 
-const URL = 'http://localhost:3003/';
     
 export const getDogs = () => {
     return async (dispatch) => {
       try {
-            const dogs=(await axios(`${URL}dogs`)).data;
+            const dogs=(await axios(`dogs`)).data;
             return dispatch({
                type: GET_DOGS,
                payload: [...dogs],
@@ -31,7 +30,7 @@ export const getDogs = () => {
 export const addDog = (newDog) => {
     return async (dispatch) => {
       try {
-            await axios.post(`${URL}dogs`, newDog)
+            await axios.post(`dogs`, newDog)
             return dispatch({
                type: ADD_DOG,
                payload: newDog,
@@ -47,7 +46,7 @@ export const addDog = (newDog) => {
 export const getByName = (name) => {
     return async (dispatch) => {
         try {
-           const dogs=(await axios(`${URL}dogs?name=${name}`)).data;
+           const dogs=(await axios(`dogs?name=${name}`)).data;
            return dispatch({
                  type: GET_BYNAME,
                  payload: dogs,
@@ -63,7 +62,7 @@ export const getByName = (name) => {
 export const deleteDog = (id) => {
     return async (dispatch) => {
         try {
-           const dogs=(await axios.delete(`${URL}dogs/${id}`)).data;
+           const dogs=(await axios.delete(`dogs/${id}`)).data;
            return dispatch({
                  type: DELETE_DOG,
                  payload: dogs,
@@ -79,7 +78,7 @@ export const deleteDog = (id) => {
 export const getTemperaments = () => {
     return async (dispatch) => {
       try {
-            const temp = (await axios(`${URL}temperaments`)).data
+            const temp = (await axios(`temperaments`)).data
             return dispatch({
                type: GET_TEMPERAMENTS,
                payload: temp
