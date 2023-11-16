@@ -1,0 +1,71 @@
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    width:auto;
+    height: 400px;
+    justify-content: center;
+    top:35px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+
+}
+.pagination {
+    display: flex; /* Usa flexbox para centrar horizontalmente */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 5px;
+    position: relative;
+    top: 40px;
+}
+.page-button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover; 
+    cursor: pointer;
+}
+.prev {
+    background-image: url('https://cdn-icons-png.flaticon.com/128/7211/7211975.png');
+}
+.prev:hover {
+    background-image: url('https://cdn-icons-gif.flaticon.com/7211/7211975.gif');
+}
+.next {
+    background-image: url('https://cdn-icons-png.flaticon.com/128/9197/9197214.png');
+}
+.next:hover {
+    background-image: url('https://cdn-icons-gif.flaticon.com/9197/9197214.gif');
+}
+.active {
+    background-image: url('https://cdn-icons-png.flaticon.com/128/9513/9513736.png');
+    color: black;
+    font-weight: bolder;
+}
+.inactive {
+    background-image: url('https://cdn-icons-png.flaticon.com/128/4225/4225925.png');
+}
+.inactive:hover {
+    background-image: url('https://cdn-icons-png.flaticon.com/128/9513/9513736.png');
+    color: black;
+    font-weight: bolder;
+}
+
+.noDogFound  {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    top:30%;
+    left: 26%;
+    border-color: blueviolet;
+    border-style: groove;
+    padding: 80px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    font-size: larger;
+}

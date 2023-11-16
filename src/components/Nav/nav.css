@@ -1,0 +1,44 @@
+.navbar {
+  border-bottom: 2px ;
+  height: 65px;
+  position: relative;
+  background-image: url('https://previews.123rf.com/images/ddmhzr/ddmhzr1407/ddmhzr140700007/30025207-background-with-dog-paw-print-and-bone.jpg');
+}
+.gif-icon img {
+    width: 55px; /* Initial width */
+    height: 55px; /* Initial height */
+}
+
+.gif-icons-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    justify-content:center
+  }
+.gif-container {
+    display: flex;
+    align-items: center;
+    width: 100px;
+  }
+.gif-icon {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+.text-overlay {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    right: 0;
+    background: rgba(54, 1, 153, 0.5);
+    color: white;
+    padding: 0px;
+    margin-left: -5px;
+    margin-right: -5px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none; 
+    border-radius: 5%;
+}
+  

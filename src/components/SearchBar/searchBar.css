@@ -1,0 +1,52 @@
+.searchBar {
+    position: relative;
+    top: 6px;
+    display: flex; 
+    justify-content: center;
+    gap: 60px;
+    background-color: rgb(216, 187, 243, .6);
+    height: 29px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    font-size: small;
+}
+
+  .filters,
+  .search,
+  .orders,
+  .clean {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+  }
+
+  .search-button:hover {
+    border-radius: 30%;
+    size: 20px;
+    background-color: rgb(139, 41, 231);
+    color: white;
+  }
+  .clean-button:hover {
+    border-radius: 30%;
+    size: 20px;
+    background-color: rgb(139, 41, 231);
+    color: white;
+  }
+
+  .search-button, .clean-button {
+    border: none;
+    size: 20px;
+    background-color: rgb(200, 159, 238);
+    color: rgb(18, 16, 16);
+    border: 1px;
+    border-style: solid;
+    border-color:blueviolet;
+    border-radius: 20%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    font-size: small;
+  }
+  
+
+
+
+
+  
